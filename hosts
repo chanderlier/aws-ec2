@@ -1,0 +1,14 @@
+[ready]
+re-master1 hostname=re-master1 ansible_ssh_private_key_file=/root/.ssh/shadow-nx.pem ansible_ssh_user=ec2-user
+re-master2 hostname=re-master2 ansible_ssh_private_key_file=/root/.ssh/shadow-nx.pem ansible_ssh_user=ec2-user
+re-master3 hostname=re-master3 ansible_ssh_private_key_file=/root/.ssh/shadow-nx.pem ansible_ssh_user=ec2-user
+re-worker1 hostname=re-worker1 ansible_ssh_private_key_file=/root/.ssh/shadow-nx.pem ansible_ssh_user=ec2-user
+re-worker2 hostname=re-worker2 ansible_ssh_private_key_file=/root/.ssh/shadow-nx.pem ansible_ssh_user=ec2-user
+re-worker3 hostname=re-worker3 ansible_ssh_private_key_file=/root/.ssh/shadow-nx.pem ansible_ssh_user=ec2-user
+[cluster]
+re-master1 hostname=re-master1 ansible_ssh_private_key_file=/root/.ssh/shadow-nx.pem ansible_ssh_user=ec2-user
+re-master2 hostname=re-master2 ansible_ssh_private_key_file=/root/.ssh/shadow-nx.pem ansible_ssh_user=ec2-user
+re-master3 hostname=re-master3 ansible_ssh_private_key_file=/root/.ssh/shadow-nx.pem ansible_ssh_user=ec2-user
+re-worker1 hostname=re-worker1 ansible_ssh_private_key_file=/root/.ssh/shadow-nx.pem ansible_ssh_user=ec2-user
+re-worker2 hostname=re-worker2 ansible_ssh_private_key_file=/root/.ssh/shadow-nx.pem ansible_ssh_user=ec2-user
+re-worker3 hostname=re-worker3 ansible_ssh_private_key_file=/root/.ssh/shadow-nx.pem ansible_ssh_user=ec2-user
