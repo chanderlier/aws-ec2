@@ -1,0 +1,9 @@
+---
+- hosts: cluster
+  remote_user:root
+  become: true
+  tasks: 
+  - name: kube-config.yaml
+    copy: src=kubeadm-config.yaml dest=kubeadm-config.yaml
+  - name: images pull
+    shell: kubeadm config images pull --config kubeadm-config.yaml
