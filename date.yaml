@@ -1,0 +1,7 @@
+---
+- hosts: ready
+  remote_user: root
+  become: true
+  tasks: 
+  - name: set date
+    shell: cp -f  /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
