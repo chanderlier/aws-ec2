@@ -1,0 +1,8 @@
+---
+- hosts: master1
+  remote_user: root
+  become: true
+  tasks: 
+  - name: ssh-keygen
+    shell: ssh-keygen -t rsa -N '' -f id_rsa -q
+
