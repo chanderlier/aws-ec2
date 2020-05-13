@@ -5,4 +5,16 @@
   tasks: 
   - name: ssh-keygen
     shell: ssh-keygen -t rsa -N '' -f id_rsa -q
-
+  - name: copy id_rsa.pub
+    fetch: 
+        dest=/root/.ssh/id_rsa.pub 
+        src=id_rsa.pub
+- hosts: master
+  remote_user: root
+  become: true
+  tasks: 
+  - name: copy id_rsa.pub to master
+    copy: src=id_rsa.pub dest=/root/.ssh/id_rsa.pub
+  - name: copy id_rsa.pub to .ssh/authorized_keys
+    shell: cat .ssh/id_rsa.pub >> .ssh/authorized_keys
+    
