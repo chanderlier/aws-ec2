@@ -1,0 +1,6 @@
+---
+- hosts: master
+  remote_user: root
+  tasks:  
+  - name: pull k8s image
+    shell: kubeadm config images pull --config kubeadm-config.yaml
