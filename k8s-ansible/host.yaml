@@ -1,0 +1,7 @@
+---
+- hosts: ready
+  become: true
+  remote_user: root
+  tasks: 
+  - name: edit hosts
+    copy: src=host dest=/etc/hosts
