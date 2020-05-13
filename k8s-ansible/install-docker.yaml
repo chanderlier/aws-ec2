@@ -1,0 +1,12 @@
+---
+- hosts: cluster
+  remote_user: root
+  become: true
+  tasks: 
+  - name: install docker
+    shell: amazon-linux-extras install -y  docker
+  - name: start && enable docker
+    service: 
+        name: docker
+        state: started 
+        enabled: yes
