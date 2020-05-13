@@ -1,0 +1,13 @@
+---
+- hosts: ready
+  remote_user: ec2-user
+  become: true
+  tasks:
+  - name:  root
+    shell: cp /home/ec2-user/.ssh/authorized_keys /root/.ssh/authorized_keys
+  - name: set date
+    shell: cp -f  /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+  - name: set hostname
+    raw: "echo {{hostname|quote}} > /etc/hostname"
+  - name: 
+    shell: hostname {{hostname|quote}}
