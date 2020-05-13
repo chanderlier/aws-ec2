@@ -1,0 +1,12 @@
+---
+- hosts: etcd
+  remote_user: root
+  tasks: 
+  - name: get etcd.rpm
+    copy: src=etcd-3.3.11-2.el7.centos.x86_64.rpm dest=etcd-3.3.11-2.el7.centos.x86_64.rpm
+  - name: install etcd
+    shell: rpm -ivh  etcd-3.3.11-2.el7.centos.x86_64.rpm
+  - name: enable etcd
+    service: 
+        name: etcd
+        enabled: yes
