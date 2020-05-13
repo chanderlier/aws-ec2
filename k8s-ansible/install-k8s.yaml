@@ -1,0 +1,15 @@
+---
+- hosts: cluster
+  become: true
+  remote_user: root
+  tasks:  
+  - name: edit repo
+    copy: src=k8s.repo dest=/etc/yum.repos.d/k8s.repo
+  - name: edit kubelet
+    copy: src=kubelet dest=/etc/sysconfig/kubelet
+  - name: install kubeadm kubelet kubectl
+    shell: yum install -y kubeadm kubelet kubectl 
+  - name: enable kubelet
+    service: 
+         name: kubelet
+         enabled: yes
