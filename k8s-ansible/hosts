@@ -1,18 +1,18 @@
 [ready]
-d-master1 hostname=d-master1 ansible_ssh_private_key_file=/root/.ssh/gemii-shadow-nx.pem ansible_ssh_user=ec2-user
-d-master2 hostname=d-master2 ansible_ssh_private_key_file=/root/.ssh/gemii-shadow-nx.pem ansible_ssh_user=ec2-user
-d-master3 hostname=d-master3 ansible_ssh_private_key_file=/root/.ssh/gemii-shadow-nx.pem ansible_ssh_user=ec2-user
-d-worker1 hostname=d-worker1 ansible_ssh_private_key_file=/root/.ssh/gemii-shadow-nx.pem ansible_ssh_user=ec2-user
-d-worker2 hostname=d-worker2 ansible_ssh_private_key_file=/root/.ssh/gemii-shadow-nx.pem ansible_ssh_user=ec2-user
-d-worker3 hostname=d-worker3 ansible_ssh_private_key_file=/root/.ssh/gemii-shadow-nx.pem ansible_ssh_user=ec2-user
+d-master1 hostname=d-master1 ansible_ssh_private_key_file=/root/.ssh/dieser.pem ansible_ssh_user=ec2-user
+d-master2 hostname=d-master2 ansible_ssh_private_key_file=/root/.ssh/dieser.pem ansible_ssh_user=ec2-user
+d-master3 hostname=d-master3 ansible_ssh_private_key_file=/root/.ssh/dieser.pem ansible_ssh_user=ec2-user
+d-worker1 hostname=d-worker1 ansible_ssh_private_key_file=/root/.ssh/dieser.pem ansible_ssh_user=ec2-user
+d-worker2 hostname=d-worker2 ansible_ssh_private_key_file=/root/.ssh/dieser.pem ansible_ssh_user=ec2-user
+d-worker3 hostname=d-worker3 ansible_ssh_private_key_file=/root/.ssh/dieser.pem ansible_ssh_user=ec2-user
 [cluster]
-d-master1 hostname=d-master1 ansible_ssh_private_key_file=/root/.ssh/gemii-shadow-nx.pem ansible_ssh_user=ec2-user
-d-master2 hostname=d-master2 ansible_ssh_private_key_file=/root/.ssh/gemii-shadow-nx.pem ansible_ssh_user=ec2-user
-d-master3 hostname=d-master3 ansible_ssh_private_key_file=/root/.ssh/gemii-shadow-nx.pem ansible_ssh_user=ec2-user
-d-worker1 hostname=d-worker1 ansible_ssh_private_key_file=/root/.ssh/gemii-shadow-nx.pem ansible_ssh_user=ec2-user
-d-worker2 hostname=d-worker2 ansible_ssh_private_key_file=/root/.ssh/gemii-shadow-nx.pem ansible_ssh_user=ec2-user
-d-worker3 hostname=d-worker3 ansible_ssh_private_key_file=/root/.ssh/gemii-shadow-nx.pem ansible_ssh_user=ec2-user
+d-master1 hostname=d-master1 ansible_ssh_private_key_file=/root/.ssh/dieser.pem ansible_ssh_user=ec2-user
+d-master2 hostname=d-master2 ansible_ssh_private_key_file=/root/.ssh/dieser.pem ansible_ssh_user=ec2-user
+d-master3 hostname=d-master3 ansible_ssh_private_key_file=/root/.ssh/dieser.pem ansible_ssh_user=ec2-user
+d-worker1 hostname=d-worker1 ansible_ssh_private_key_file=/root/.ssh/dieser.pem ansible_ssh_user=ec2-user
+d-worker2 hostname=d-worker2 ansible_ssh_private_key_file=/root/.ssh/dieser.pem ansible_ssh_user=ec2-user
+d-worker3 hostname=d-worker3 ansible_ssh_private_key_file=/root/.ssh/dieser.pem ansible_ssh_user=ec2-user
 [etcd]
-d-master1 hostname=d-master1 ansible_ssh_private_key_file=/root/.ssh/gemii-shadow-nx.pem ansible_ssh_user=root
-d-master2 hostname=d-master2 ansible_ssh_private_key_file=/root/.ssh/gemii-shadow-nx.pem ansible_ssh_user=root
-d-master3 hostname=d-master3 ansible_ssh_private_key_file=/root/.ssh/gemii-shadow-nx.pem ansible_ssh_user=root
+d-master1 hostname=d-master1 ansible_ssh_private_key_file=/root/.ssh/dieser.pem ansible_ssh_user=root
+d-master2 hostname=d-master2 ansible_ssh_private_key_file=/root/.ssh/dieser.pem ansible_ssh_user=root
+d-master3 hostname=d-master3 ansible_ssh_private_key_file=/root/.ssh/dieser.pem ansible_ssh_user=root
